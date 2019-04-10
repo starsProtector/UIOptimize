@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--第一种方式:设置成透明的界面，制造延时启动效果-->
+<!--    <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>-->
+
+        <!--第二种方式:设置一个背景图,有问题背景图一直存在-->
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--注意：当界面加载完成后需要将背景改成白色。-->
+
+    </style>
+
+</resources>

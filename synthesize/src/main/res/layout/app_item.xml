@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 图片标题下载区域 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <!--使用LinerLayout层级嵌套过深,导致过度绘制,用RelativeLayout改变此状况-->
+
+    <!-- 图片 -->
+    <ImageView
+        android:id="@+id/item_appinfo_iv_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_default" />
+
+    <!-- 文字部分 -->
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_appinfo_iv_icon"
+
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- 应用的大小 -->
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/item_appinfo_iv_icon"
+        android:singleLine="true"
+        android:text="标题信息"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>
+

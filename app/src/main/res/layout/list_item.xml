@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="#FFF"
+    >
+
+<!--
+    1.控件有无用的background背景,造成过度绘制
+    2.每一个都条目都有LinearLayout,使用Hierarchy Viewer,会发现性能差-->
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:gravity="center"
+        />
+
+</LinearLayout>
